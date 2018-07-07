@@ -22,8 +22,10 @@
 
   body{
   font-family: 'Source Sans Pro', sans-serif;
-  #transform: scale(1.01);
+  #transform: scale(1.009);
   #transform-origin: 0 0;
+  
+  #zoom: 1.1;
   }
   .navbar {
     height: px;
@@ -51,7 +53,6 @@
       border-color: transparent;
       position: sticky;
   }
-
   .bd-navbar .navbar-nav .nav-link{
     color: #F2F2F2;
   }
@@ -109,7 +110,7 @@
     color: #7574FF;
   }
   .hlp{
-    color: #ea558e;
+    color: #e83e8c;
   }
   .hlb{
     color: #7574FF;
@@ -144,8 +145,6 @@
       font-size: 12px;
   }
 
-
-
   .code-box-copy__tooltip::after {
       display: block;
       position: absolute;
@@ -159,11 +158,8 @@
       border-color: #7574FF transparent transparent transparent;
   }
 
+  .toc-entry a:hover{color:#7574FF;text-decoration:none}
 
-  .toc-entry a:hover{color:#7574FF;text-decoration:none;}
-.sactive a{
-  color: #7574ff;
-}
 
   .bd-links{padding-top:1rem;padding-bottom:1rem;margin-right:-15px;margin-left:-15px}@media (min-width:768px){@supports ((position:-webkit-none) or (position:none)){.bd-links{max-height:0px;overflow-y:auto}}}@media (min-width:768px){.bd-links{display:block!important}}
 
@@ -178,17 +174,16 @@
   }
 
 
-  /*li{
+  li{
     color:#00c7ba;
-  }*/
+  }
 
   li span{
     color: #212529;
   }
-  
-/*.fas{
+  .fas{
     color: #7574FF;
-  }*/
+  }
 
 
 
@@ -274,6 +269,7 @@
 	display: inline-block;
 	pointer-events: none;
   padding-top: 1.2px;
+	
 }
 
 .searchbutton {
@@ -326,29 +322,7 @@
 .expandright:focus {
 	padding: 0 0 0 16px;
 }
-
-.impc{
-  background-color: #f8f8f8;
-  border-color: transparent;
-  border-radius: 0px;
- 
-}
-
-
-.bd-sidebar {
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
-    order: 0;
-    border-bottom: 0px solid transparent;
-    border-right: 1px solid rgba(0,0,0,.1);
-}
-
-.mt-0:hover{
-    color:#7574ff;
-  }
-.bd-toc-link{
-  font-size: 18px;
-}
+/*
 .bd-sidebar .nav>li>a {
     display: block;
     padding: .25rem 1.5rem;
@@ -361,42 +335,4 @@
     color: rgba(0,0,0,.85);
     font-size: 18px;
     background-color: transparent;
-}
-
-.progress-bar{
-  background-color: #7574ff;
-}
-.toch{
-  color: #7574ff;
-}
-.sactive{
-  color: #7574ff;
-}
-.bclass{
-  background-color: #f8f8f8;
-}
-/*li{
-  padding-top: 2px;
-  padding-bottom:2px;
 }*/
-.aname{
-  font-weight: 350;
-}
-.card-subtitle {
-  color: #868E96
-}
-.card-subtitle:hover {
-  color: #6B7178;
-}
-
-.sname{
-  color: #7574FF;
-}
-.sname:hover{
-  color: #5B5BE5;
-}
-
-.facss{
-  color: #868E96;
-}
-.facss:hover{color:#6B7178;text-decoration:none;}
